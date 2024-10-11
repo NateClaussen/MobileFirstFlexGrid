@@ -1,0 +1,115 @@
+header {
+	background-color: #df4c4c;
+	color: snow;
+	/* display: flex; */
+	/* align-items: center; */
+	/* justify-content: space-between; */
+	/* flex-wrap: wrap; */
+	/* flex-direction: column; */
+}
+
+header h1 {
+	text-align: center;
+	padding: 1em;
+}
+
+header ul {
+	list-style-type: none;
+}
+
+nav ul li {
+	background-color: #f8b7b7;
+	padding: 1em;
+	display: block;
+	width: 100%;
+	/* display: inline-block; */
+}
+
+nav a {
+	display: block;
+	color: white;
+	padding: 1em;
+}
+
+nav a:hover {
+	background-color: #db4b4b;
+	border-radius: 5px;
+	text-decoration: none;
+}
+
+.PageHeader {
+	text-align: center;
+}
+
+.card-title {
+	text-align: center;
+	font-size: 30px;
+	grid-area: title;
+}
+
+.card-image {
+	margin-left: 10px;
+	margin-bottom: 10px;
+	grid-area: image;
+}
+
+.card-description {
+	grid-area: description;
+}
+
+.card-ings {
+	grid-area: ings;
+}
+
+.grid-card {
+	display: grid;
+	gap: 1em;
+	grid-template-areas:
+		"title title"
+		"image description"
+		"image ings";
+	/* grid-template-columns: 1fr 1fr 1fr; */
+	border: 2px solid black;
+	margin: 1em;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+		"Lucida Sans", Arial, sans-serif;
+}
+
+.grid-card ul {
+	/* padding-left: 10px; */
+	list-style-position: inside;
+}
+
+footer {
+	background-color: #db4b4b;
+	padding: 2em;
+	text-align: center;
+	color: snow;
+}
+
+@media (min-width: 1024px) {
+	header {
+		background-color: #df4c4c;
+		color: snow;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	nav ul li {
+		display: inline-block;
+		width: auto;
+		margin: 0;
+		border-radius: 5px;
+	}
+
+	.flex-container {
+		display: flex;
+		flex-flow: row;
+		flex-wrap: wrap;
+	}
+
+	.grid-card {
+		flex-basis: 45%;
+	}
+}
